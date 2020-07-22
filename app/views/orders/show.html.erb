@@ -19,7 +19,6 @@
     </thead>
     <tbody>
       <% @order.line_items.each do |line_item| %>
-        <% puts line_item.inspect %>
         <%= render 'line_item', product: line_item.product, quantity: line_item.quantity.to_i, price: line_item.item_price_cents %>
     <%end%>  
     </tbody>
