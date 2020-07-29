@@ -17,6 +17,7 @@ RSpec.feature "UserLogins", type: :feature, js: true do
 
   
     expect(page).to have_content ('Products')
+    expect(page).to have_content ('Signed in as: Samantha Gadet')
 
     # DEBUG / VERIFY
     save_screenshot
